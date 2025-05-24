@@ -1,10 +1,16 @@
 #include <iostream>
 
+using namespace std;
+
 int main() {
-    double x = 10;
-    double y = 5;
-    double z = (x+10)/(3*y);
-    std:: cout <<"Z = " << z << std::endl <<"y = " << y;
+    int sales = 95000;
+    double state_tax = sales * 0.04;
+    double county_tax = sales * 0.02; 
+    cout << "State Tax = " << state_tax << endl;
+    cout << "County Tax = " << county_tax <<endl;
+    int sum_payment = state_tax + county_tax;
+    int galan_pul = sales - sum_payment;
+    cout<< "Galan Pul = " << galan_pul;
 
     system("PAUSE");
 
