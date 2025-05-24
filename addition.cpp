@@ -1,9 +1,10 @@
 #include <iostream>
 
 int main() {
-    int a = 3;
-    int b = a++; //a = 4 //b = 3
-    std:: cout << b;
+    double x = 10;
+    double y = 5;
+    double z = (x+10)/(3*y);
+    std:: cout <<"Z = " << z << std::endl <<"y = " << y;
 
     system("PAUSE");
 
