@@ -2,8 +2,8 @@
 
 int main() {
     int a = 3;
-    a--;
-    std:: cout << a;
+    int b = a++; //a = 4 //b = 3
+    std:: cout << b;
 
     system("PAUSE");
 
