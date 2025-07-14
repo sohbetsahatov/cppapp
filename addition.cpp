@@ -1,12 +1,19 @@
 #include <iostream>
-#include <cmath>
+#include <cstdlib>
+#include <ctime>
+
 using namespace std;
 
 int main() {
    
-   int number = 0xFFB;
+    const int max_value = 6;
+    const int min_value = 1;
 
-   cout<< number;
+    srand(time(0));
+    short result1 = (rand() % (max_value - min_value + 1)) + min_value;
+    short result2 = (rand() % (max_value - min_value + 1)) + min_value;
+
+    cout << result1 << ", " << result2;
 
     system("PAUSE");
 
