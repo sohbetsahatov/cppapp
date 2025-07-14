@@ -1,19 +1,15 @@
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
+#include <iomanip>
 
 using namespace std;
 
 int main() {
    
-    const int max_value = 6;
-    const int min_value = 1;
-
-    srand(time(0));
-    short result1 = (rand() % (max_value - min_value + 1)) + min_value;
-    short result2 = (rand() % (max_value - min_value + 1)) + min_value;
-
-    cout << result1 << ", " << result2;
+    cout << left << setw(15) << "Course" <<setw(10) << "Students" <<endl;
+    cout << left << setw(15) << "C++";
+    cout << right << setw(10) << "100" << endl;
+    cout << left << setw(15) << "JavaScript";
+    cout << right << setw(10) << "50" << endl;
 
     system("PAUSE");
 
