@@ -4,13 +4,10 @@ using namespace std;
 
 int main() {
    
-    string names[3];
-
-    getline(cin, names[0]);
-    getline(cin, names[1]);
-    getline(cin, names[2]);
-
-    cout << names[0];
+    int x = 1;
+    double y = 2.2;
+    int z = x + static_cast<int>(y);
+        cout << z;
 
         system("PAUSE");
 
