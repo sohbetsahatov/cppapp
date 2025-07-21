@@ -8,7 +8,7 @@ int main(){
     int entering_password = 0;
     
     while(entering_password != password){
-        cout << "Please enter password: " << endl;
+        cout << "Please enter password:   " << endl;
         cin >> entering_password;
         if (entering_password == password){
             cout << "Welcome!";
