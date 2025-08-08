@@ -7,24 +7,20 @@
 using namespace std;
 
 int main(){
-    cout << "Street: ";
-    string street;
-    getline(cin, street);
+    cout << "Enter 3 names: ";
+    string names[3];
 
-    cout << "City: ";
-    string city;
-    getline(cin, city);
+    cout << "Name: ";
+    getline(cin, names[0]);
 
-    cout << "state: ";
-    string state;
-    getline(cin, state);
+    cout << "Name: ";
+    getline(cin, names[1]);
 
-    cout << "Zip Code: ";
-    string zipCode;
-    getline(cin, zipCode);
+    cout << "Name: ";
+    getline(cin, names[2]);
 
-    cout << street << endl;
-    cout << city << ", " << state << ", " << zipCode << endl;
+
+    cout << names[0];
       
     system("PAUSE");
     return 0;
