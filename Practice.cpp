@@ -7,20 +7,15 @@
 using namespace std;
 
 int main(){
-    cout << "Enter 3 names: ";
-    string names[3];
+    
+    double first;
+    double second;
+    cin >> first >> second;
+    double another = (first > second) ? first : second;
 
-    cout << "Name: ";
-    getline(cin, names[0]);
+    cout << another;
 
-    cout << "Name: ";
-    getline(cin, names[1]);
-
-    cout << "Name: ";
-    getline(cin, names[2]);
-
-
-    cout << names[0];
+    
       
     system("PAUSE");
     return 0;
