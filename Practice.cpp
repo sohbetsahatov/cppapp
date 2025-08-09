@@ -8,12 +8,27 @@ using namespace std;
 
 int main(){
     
-    double first;
-    double second;
-    cin >> first >> second;
-    double another = (first > second) ? first : second;
+    double firstNumber;
+    double secondNumber;
+    char result;
+    cin >> firstNumber >> result >> secondNumber;
 
-    cout << another;
+    switch (result){
+        case '+':
+            cout << firstNumber + secondNumber << endl;
+            break;
+        case '-':
+            cout << firstNumber - secondNumber << endl;
+            break;
+        case '*':
+            cout << firstNumber * secondNumber << endl;
+            break;
+        case '/':
+            cout << firstNumber / secondNumber << endl;
+    
+        default:
+            cout << "Invalid operator" << endl;
+    }
 
     
       
