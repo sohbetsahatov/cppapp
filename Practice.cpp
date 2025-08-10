@@ -6,32 +6,24 @@
 
 using namespace std;
 
-int main(){
-    
-    double firstNumber;
-    double secondNumber;
-    char result;
-    cin >> firstNumber >> result >> secondNumber;
+void greet(string firstName, string lastName){
+    cout << "Hello " << firstName << " " << lastName << endl;
+}
 
-    switch (result){
-        case '+':
-            cout << firstNumber + secondNumber << endl;
-            break;
-        case '-':
-            cout << firstNumber - secondNumber << endl;
-            break;
-        case '*':
-            cout << firstNumber * secondNumber << endl;
-            break;
-        case '/':
-            cout << firstNumber / secondNumber << endl;
-    
-        default:
-            cout << "Invalid operator" << endl;
+int integer(int first, int second){
+    if(first > second){
+        return first;
+    }else{
+        return second;
     }
+}
+int main(){
 
-    
-      
+    int number = integer(2, 88);
+
+    cout << number << endl;
+
+
     system("PAUSE");
     return 0;
 }
