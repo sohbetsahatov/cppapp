@@ -1,23 +1,15 @@
 #include <iostream>
 
 using namespace std;
-
-    int integers(int first, int second)
-    {
-        if (first > second)
-        {
-            return first;
-        }else
-        {
-            return second;
-        }
-
-    }
+void greet(string& name);
 int main()
 {
-    int x, y;
-    cin >> x >> y;
-        cout << integers(x, y) << endl;
-
+    string name;
+    cin >> name;
+    greet(name);
     return 0;
+}
+void greet(string& name)
+{
+    cout << "Hello " << name << endl;
 }
