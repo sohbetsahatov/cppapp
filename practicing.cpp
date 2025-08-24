@@ -3,17 +3,19 @@
 using namespace std;
 
     int main(){
-    cout << "Enter two-digit number: ";
-    int twoDigitnumber;
-    cin >> twoDigitnumber;
+    cout << "Enter three-digit number: ";
+    int threeDigitnumber;
+    cin >> threeDigitnumber;
     
-    if(twoDigitnumber > 9 && twoDigitnumber < 100){
-        int firstdigit = twoDigitnumber / 10;
-        int secondDigit = twoDigitnumber % 10;
+    if(threeDigitnumber > 99 && threeDigitnumber < 1000){
+        int firstdigit = threeDigitnumber / 100;
+        int takingSecondDigit = threeDigitnumber % 100;
+        int secondDigit = takingSecondDigit / 10;
+        int thirdDigit = takingSecondDigit % 10;
     
-        cout << "Sum of digits = " << firstdigit + secondDigit << endl;
+        cout << "Sum of digits = " << firstdigit + secondDigit + thirdDigit << endl;
     }else{
-        cout << "This number is not two-digit" << endl;
+        cout << "This number is not three-digit" << endl;
     }
     
 
