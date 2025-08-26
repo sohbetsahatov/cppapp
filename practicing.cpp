@@ -2,17 +2,18 @@
 
 using namespace std;
 
-int s = 100;
+int m = 1000;
 int main() {
-    cout << "Enter distance in centimetr: ";
-    int distanceInCentimetr;
-    cin >> distanceInCentimetr;
-    int metre = distanceInCentimetr / s;
-    if (metre != 1){
-        cout << metre << " Metres" << endl;
+    cout << "Enter kilogram: ";
+    int kilogram;
+    cin >> kilogram;
+    int ton = kilogram / m;
+    if(ton != 1){
+        cout << ton << " Tons" << endl;
     }else{
-        cout << metre << " Metre" << endl;
+        cout << ton << " Ton" << endl;
     }
+    
 
 
     system("PAUSE");
