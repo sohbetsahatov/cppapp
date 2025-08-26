@@ -2,12 +2,17 @@
 
 using namespace std;
 
+int s = 100;
 int main() {
-    string name;
-    cout << "Enter name: ";
-    cin >> name;
-    
-    cout << "Hello " << name << endl;
+    cout << "Enter distance in centimetr: ";
+    int distanceInCentimetr;
+    cin >> distanceInCentimetr;
+    int metre = distanceInCentimetr / s;
+    if (metre != 1){
+        cout << metre << " Metres" << endl;
+    }else{
+        cout << metre << " Metre" << endl;
+    }
 
 
     system("PAUSE");
