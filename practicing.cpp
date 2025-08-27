@@ -7,10 +7,13 @@ int main() {
     int number;
     cin >> number;
     if(number > 99 && number < 1000){
-        int x = number / 100;
-        cout << "First digit of this number: " << x << endl;
+        int a = number % 100;
+        int b = a / 10;
+        int c = a % 10;
+        cout << c << endl;
+        cout << b << endl;
     }else{
-        cout << "Error! This is not three digit number! " << endl;
+        cout << "Error! This number is not three digit number. " << endl;
     }
 
     system("PAUSE");
