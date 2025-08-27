@@ -10,7 +10,7 @@ int main() {
     cout << "Enter b: ";
     cin >> b;
     if(a > b){
-        cout << a / b << endl;
+        cout << a % b << endl;
     }else {
         cout << "Error" << endl;
     }
