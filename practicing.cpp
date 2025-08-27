@@ -2,13 +2,18 @@
 
 using namespace std;
 
-int kilobyteSize = 1024;
 int main() {
-    cout << "Enter byte: ";
-    int byte;
-    cin >> byte;
-    int kilobyte = byte / kilobyteSize;
-    cout << kilobyte << " Kilobyte" << endl;
+    int a;
+    int b;
+    cout << "Enter a: ";
+    cin >> a;
+    cout << "Enter b: ";
+    cin >> b;
+    if(a > b){
+        cout << a / b << endl;
+    }else {
+        cout << "Error" << endl;
+    }
     
 
 
