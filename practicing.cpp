@@ -2,17 +2,13 @@
 
 using namespace std;
 
-int m = 1000;
+int kilobyteSize = 1024;
 int main() {
-    cout << "Enter kilogram: ";
-    int kilogram;
-    cin >> kilogram;
-    int ton = kilogram / m;
-    if(ton != 1){
-        cout << ton << " Tons" << endl;
-    }else{
-        cout << ton << " Ton" << endl;
-    }
+    cout << "Enter byte: ";
+    int byte;
+    cin >> byte;
+    int kilobyte = byte / kilobyteSize;
+    cout << kilobyte << " Kilobyte" << endl;
     
 
 
