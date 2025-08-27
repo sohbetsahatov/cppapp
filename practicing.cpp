@@ -11,10 +11,7 @@ int main() {
         int a = number % 100;
         int b = a / 10;
         int c = a % 10;
-        int sum = y + b + c ;
-        int multiple = y * b * c;
-        cout << "Sum of digits = " << sum << endl;
-        cout << "multiple of digits = " << multiple << endl;
+        cout << c << b << y << endl;
         
     }else{
         cout << "Error! This number is not three digit number. " << endl;
