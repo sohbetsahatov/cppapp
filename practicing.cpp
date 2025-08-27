@@ -11,7 +11,7 @@ int main() {
         int a = number % 100;
         int b = a / 10;
         int c = a % 10;
-        cout << c << b << y << endl;
+        cout << b << c << y << endl;
         
     }else{
         cout << "Error! This number is not three digit number. " << endl;
