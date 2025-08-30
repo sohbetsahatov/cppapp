@@ -2,7 +2,7 @@
 
 using namespace std;
 
-    const int startingDay = 4;
+    const int startingDay = 6;
 
 int main(){
 
